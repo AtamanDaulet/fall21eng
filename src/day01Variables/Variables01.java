@@ -1,4 +1,4 @@
-package day01Variables;
+package day01variables;
 
 public class Variables01 {
 
@@ -32,8 +32,8 @@ public class Variables01 {
 			char initial;
 			
 			//Assign 'S' to "initial" variable
-			initial = 'S';
-			
+			initial = 'A';
+			initial++;
 			System.out.println(initial);
 			
 		}

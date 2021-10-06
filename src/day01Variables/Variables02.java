@@ -1,4 +1,4 @@
-package day01Variables;
+package day01variables;
 
 public class Variables02 {
 
@@ -40,7 +40,7 @@ public class Variables02 {
 		char initialOfFirstName = 'S';
 		char initialOfLastName = 'A';
 				
-System.out.println(initialOfFirstName);//S
+		System.out.println(initialOfFirstName);//S
 		
 		System.out.println(initialOfFirstName + 5);//88
 		
@@ -59,6 +59,7 @@ System.out.println(initialOfFirstName);//S
 		System.out.println(initialOfFirstName / initialOfLastName);//1
 		
 		System.out.println(29 / 10);//2.9 ==> 2
-		System.out.println(29 / 1.0);//2.9 ==> 2
+		System.out.println(29.0 / 10);//2.9 
+		System.out.println(29 / 1.0);//29.0 
 	}
 }
