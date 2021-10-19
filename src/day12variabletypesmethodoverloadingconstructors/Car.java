@@ -1,4 +1,4 @@
-package day12;
+package day12variabletypesmethodoverloadingconstructors;
 /*
 1)Constructor is for creating object from a class.
 2)Every class has default constructor, default constructors are invisible.
