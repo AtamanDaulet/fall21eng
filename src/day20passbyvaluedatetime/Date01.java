@@ -4,7 +4,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class Date01 {
+import day21accessmodifiersstringbuilder.Student;
+
+public class Date01 extends Student{
 
 	/*
  	We can create object in 2 ways;
@@ -37,14 +39,24 @@ public class Date01 {
 		//How to manipulate time
 		LocalTime currentTime = LocalTime.now();
 		
-		int hour = currentTime.getHour();
-		System.out.println(hour);//21
+		System.out.println(currentDate.EPOCH);//1970-01-01 (The date computers start to measure system time)
 		
-		boolean isAfter = currentTime.isAfter(LocalTime.of(20, 11, 32, 1234));  //(int hour, int minute, int second, int nanoOfSecond)
-		System.out.println(isAfter);
+		//How to manipulate time
+		LocalTime currentTime1 = LocalTime.now();
+		int hour = currentTime1.getHour();
+		System.out.println(hour);//18
 		
-		System.out.println(currentTime.NOON);//12:00pm
-		System.out.println(Integer.MIN_VALUE);
+		//print the time 20:30
+		LocalTime time = currentTime.of(20, 30);
+		System.out.println(time);//20:30
+		
+		boolean isAfter =   currentTime.isAfter(time);
+		System.out.println(isAfter);//false
+		
+		System.out.println(currentTime.MIDNIGHT);//00:00
+		System.out.println(currentTime.NOON);//12:00
+		System.out.println(currentTime.MAX);//23:59:59.999999999
+		System.out.println(currentTime.MIN);//00:00
 
 	}
 
