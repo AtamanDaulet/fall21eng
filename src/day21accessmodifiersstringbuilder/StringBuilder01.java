@@ -56,6 +56,15 @@ public class StringBuilder01 {
 		System.out.println("sb3 is :" + sb3);//sb3 is :123456789Wooow!
 		
 		System.out.println(sb3.capacity());//9*2+2 = 20      11*2+2 = 24
+		//----
+		
+		StringBuilder sb5 = new StringBuilder("Learn");
+
+		System.out.println("Before trim: " + sb5.capacity());
+
+		sb5.trimToSize();
+
+		System.out.println("After trim: " + sb5.capacity());
 
 	}
 

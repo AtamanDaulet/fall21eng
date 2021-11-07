@@ -30,12 +30,12 @@ public class StringBuilder02 {
 		
 		//insert(2, "s"); it will insert "s" at index 2 without removing any character
 		sb2.insert(2, "s");
-		System.out.println(sb2);
+		System.out.println(sb2);//Jasv
 		
 		//THe greatest first parameter can be the length. 
 		//If you use number more than length in the first parameter you will get Run Time Error
 		sb2.insert(4, "W");
-		System.out.println(sb2);
+		System.out.println(sb2);//JasvW
 		
 		sb2.insert(1, "WMUWKL", 2, 5);
 		System.out.println(sb2);//WMUMWsvW
@@ -55,9 +55,13 @@ public class StringBuilder02 {
 		sb3.setCharAt(10, '!');
 		System.out.println(sb3);//olleh dlro!olloh
 		
+		sb3.subSequence(6, 10);
+		System.out.println("sb3:"+sb3);
 		System.out.println(sb3.subSequence(6, 10));//dlro ==> CharSequence object
-		
-		System.out.println(sb3.substring(6, 10));//dlro ==> String Object
+		System.out.println("sb3:"+sb3);
+		sb3.substring(6, 10);//dlro ==> String Object
+		System.out.println("sb3:"+sb3);
+		System.out.println(sb3.substring(6, 10));
 		
 		//toString() method converts "StringBuilder" to "String"
 		String s1 = sb3.toString().replace("o", "*");
