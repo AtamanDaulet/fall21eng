@@ -1,4 +1,4 @@
-package practice;
+package practice.day1;
 
 public class Palindrom01 {
 

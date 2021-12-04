@@ -9,8 +9,8 @@ public class EncapsulationRunner {
 //	System.out.println(std1.getGrade());//11		
 //	System.out.println(std1.isSuccessful());//true
 	
-	
-	//if you use following constructor all created students will have 
+	public static void main(String[] args) {
+		//if you use following constructor all created students will have 
 	//same name, which is not good
 	Students std2 = new Students();
 	
@@ -41,6 +41,6 @@ public class EncapsulationRunner {
 	std5.setSuccessful(false);
 	//now save the student into data base
 	System.out.println(std5);
-	
-​
+	}
+
 }

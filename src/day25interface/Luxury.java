@@ -1,5 +1,5 @@
 package day25interface;
 
-public class Luxury extends AirCondition{
+public class Luxury /*extends AirCondition*/{
 
 }
